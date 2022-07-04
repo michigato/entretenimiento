@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<p>
+ <html lang="es">
+  <head>
+   <style type="text/css">
+<!-- 
+#fecha { 
+    font-family: Tahoma, Verdana, Arial; 
+    font-size: 12px; 
+    color: #ff0000; 
+        background :  
+} 
+-->   </style>
+   <script language="JavaScript">  
+function hora(){ 
+var fecha = new Date() 
+var hora = fecha.getHours() 
+var minuto = fecha.getMinutes() 
+var segundo = fecha.getSeconds() 
+if (hora < 10) {hora = "0" + hora} 
+if (minuto < 10) {minuto = "0" + minuto} 
+if (segundo < 10) {segundo = "0" + segundo} 
+var horita = hora + ":" + minuto + ":" + segundo 
+document.getElementById('hora').firstChild.nodeValue = horita 
+tiempo = setTimeout('hora()',1000) 
+} 
+function inicio(){ 
+document.write('<span id="hora">') 
+document.write ('000000</span>') 
+hora() 
+} 
+</script>
+   <style type="text/css">
+<!-- 
+#hora { 
+    width:100px; 
+    font-family: Tahoma, Verdana, Arial; 
+    font-size: 12px; 
+    color: #000000; 
+    background :  
+    } 
+-->   </style>
+  </head>
+  <body style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+   <div align="center">
+    <b><script>fecha()</script></b></div>
+   <div align="center">
+    <b><script>inicio()</script></b></div>
+   <center>
+    <p>
+     <marquee bgcolor="#000000" width="70%"> BIENVENIDO A JR SPORTS </marquee></p>
+   </center>
+  </body>
+ </html>
+</p>
+<p>
+ <meta charset="UTF-8" />
+</p>
+<p>
+ <title>Video Playlist MOD mannyman</title>
+ <!-- Responsive viewport --></p>
+<p>
+ <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
+</p>
+<p>
+ <link href="https://cdn.plyr.io/3.6.12/plyr.css" rel="stylesheet" />
+ <style type="text/css">
+*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
+body{background:#000;}
+.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
+.container{display:grid;grid-template-columns:2fr 1fr;gap:15px;align-items:flex-start;padding:5px 5%;}
+.container .main-video{background:#151515;border-radius:5px;padding:10px;}
+.container .main-video video{width:100%;border-radius:5px;}
+.container .main-video .title{
+color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
+.container .video-list{
+background:#151515;border-radius:5px;height:582px;overflow-y:scroll;}
+.container .video-list::-webkit-scrollbar{
+width:7px;}
+.container .video-list::-webkit-scrollbar-track{
+background:#ccc;border-radius:50px;}
+.container .video-list::-webkit-scrollbar-thumb{
+background:#666;border-radius:50px;}
+.container .video-list .vid video{
+width:100px;border-radius:5px;}
+.container .video-list .vid{
+background:#f7f7f7;display:flex;align-items:center;gap:15px;border-radius:5px;margin:10px;padding:10px;border:1px solid rgba(0,0,0,.1);cursor:pointer;}
+.container .video-list .vid:hover{
+background:#eee;}
+.container .video-list .vid.active{
+background:#2980b9;}
+.container .video-list .vid.active .title{
+color:#fff;}
+.container .video-list .vid .title{
+color:#333;font-size:17px;}
+@media (max-width: 991px){
+.container{grid-template-columns:1.5fr 1fr;padding:10px;}}
+@media (max-width: 768px){
+.container{grid-template-columns:1fr;}} </style>
+</p>
+<div class="container">
+ <div class="main-video">
+  <div class="video">
+   <video autoplay="" class="js-player" controls="" muted="" poster="https://i.ibb.co/rffkt28/photostudio-1645845785826.jpg">
+    <source src="https://totalgo.totalplay.com.mx:444/KAN-HLSWeb/liveAdaptive?l=20&f=HLSAD&s=hkc26at86kbpzzczca1k8tpbxazkck268p1xpcp1ztvcx8jj68bxhj61kzxtbkcj8b2j8xaj6kxtxjtx1tpepb8jzz8j6pz6ack2a8t18zpcajhxpa22bbzx8jzxbjhj8tjz8c2jzhjkcek68tkkzajeckbvevkxzkxpkpp68ah2x2aek1ta82bjvjjhvpcb18eepa8tzx2kxbbhkvc8bebx81jzhvtbkhethb16jtat1btcj128tzthkezxk66a1xav1pcxbvk1txz2avze68vjbjkcj8cvtbpx2xavkzpxapppjjexkhbbjae8kaha.m3u8 " type="application/x-mpegURL"> </source></video>
